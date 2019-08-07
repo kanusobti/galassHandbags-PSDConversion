@@ -129,23 +129,25 @@
                         <li>
                             <a href="#home">Home</a>
                         </li>
-                         <li>
-                             <a href="#blog">Blog</a>
-                            </li> 
-                         <li>
-                             <a href="#gallery">Gallery</a>
-                            </li>   
-                         <li>
-                             <a href="#contact">Contact</a>
-                         </li>
+                        <li>
+                            <a href="#blog">Blog</a>
+                        </li> 
+                        <li>
+                            <a href="#gallery">Gallery</a>
+                        </li>   
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="stay-updated">
                     <h4>Stay Updated</h4>
                     <p>Subscribe to our newsletter to stay updated</p>
                     <div class="form">
-                        <form class="emailForm clearfix" method="post" autocomplete="on"> 
-                            <input class="email-address" type="email" name="email" required="true">
+                        
+                        <form class="emailForm clearfix" action="sendEmail.php" method="POST" autocomplete="off" name="applicationForm"> 
+                            <label for="email" class="visually-hidden">Email</label>
+                            <input class="email-address" type="email" name="email" id="email" placeholder="email address" required="true">
                             <input type="submit" value="subscribe">
                         </form>
                     </div> 

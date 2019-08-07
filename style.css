@@ -31,8 +31,7 @@ body{
 }
 a{
     text-decoration: none;
-    color:white;
-    
+    color:white; 
 }
 .wrapper{
     max-width: 1280px;
@@ -43,35 +42,31 @@ a{
     transition:0.5s all;
 }
  /* HEADER STYLES */
- header{
-     background-image: url(Assets/Assets/group-bags.png);
-     height:100vh;
-     /* min-height:600px; */
-     background-repeat: no-repeat;
-     background-color: #815600;  
-     background-size: 45%;
-     background-position-x: 88%;
-     background-position-y: 43%;
-     position:relative;
-     padding-top: 1%;
-     overflow: hidden;
-     
-     
+header{
+    background-image: url(Assets/Assets/group-bags.png);
+    height:100vh;
+    background-repeat: no-repeat;
+    background-color: #815600;  
+    background-size: 45%;
+    background-position-x: 88%;
+    background-position-y: 43%;
+    position:relative;
+    padding-top: 1%;
+    overflow: hidden;        
 }
 .mobile-menu{
-    display: none;
+display: none;
 }
- h1{
-     font-size:9rem;
-     text-align: right;
-     line-height: 94.3px;
-     position: absolute;
-     top:30%;;
-     left:10%;;
-     
-    }
+h1{
+    font-size:9rem;
+    text-align: right;
+    line-height: 94.3px;
+    position: absolute;
+    top:30%;;
+    left:10%;; 
+}
 h1 span{
-    display: block;
+display: block;
 }
 nav a{
     color:white;
@@ -83,7 +78,6 @@ nav a:hover{
     color:coral;
     letter-spacing: 2px;
     transition:0.5s all ease;
-
 }
 nav li{
     float:left;    
@@ -117,16 +111,13 @@ nav li{
 .about{
     background-color: #500801; 
     padding: 100px 0;
-    
 }
 h2{
     font-size:5.4rem;
     margin:0 0 3.5rem 0;
     font-weight: 400;
-    font-style: italic;
     margin:0;
-   }
-
+}
 .handcrafted-image {
     width:25%;
     float:left;
@@ -135,7 +126,6 @@ h2{
     padding-bottom: 25%;
     background-size: cover;
     overflow: hidden;
-	
 }
 .handcrafted-image img{
     height:auto;
@@ -152,7 +142,6 @@ p{
     line-height: 29px;
     letter-spacing: 0.2px;
     font-weight: 300;
-  
 }
 
 /* latest-collection section styling starts here */
@@ -162,12 +151,9 @@ p{
     background-size: cover;
     padding:5% 0;
 }
-
 .latest-collection h2{
     text-align:center;
-   
 }
-
 .latest-collection-images{
     padding:5% 0;
 }
@@ -202,7 +188,6 @@ p{
 .gallery-container{
     background-color: #815600;
     width:100%;
-   
 }
 .gallery-description, .gallery-image{
     width:50%;
@@ -243,9 +228,7 @@ input[type="submit"]:hover{
     transition: 0.5s;
     background-position: right center;
     background-size: 200% auto;
- }
-
-
+}
 .read-more-button a, input[type="submit"]{
     background-color: #1d0303;
     color:white;
@@ -255,10 +238,8 @@ input[type="submit"]:hover{
     font-size:2.5rem;
     text-align:center;
     font-style:italic;
-
 }
 /* MAIN ends here */
-
 /* footer styling begins */
 footer{
     background-color: #500801;
@@ -283,9 +264,7 @@ footer{
     text-transform: lowercase;
     line-height: 1.5;
     font-weight: 400;
-    font-style:italic;
-    
-    
+    font-style:italic;    
 }
 .stay-updated{
     width:60%;
@@ -293,7 +272,18 @@ footer{
     text-align: center;
     position:relative;
 }
-
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .contact{
     width:30%;
     text-align: right;
@@ -304,35 +294,52 @@ footer h4{
     font-style: italic;
     margin:0;
 }
-
 .stay-updated h4{
     padding-bottom: 15px;
 }
-
 .footer p{
     font-size:20px;
     font-weight: 300;
     font-style: italic;
     line-height: 29px;
-    margin:8px 0 10px 0;
-    
+    margin:8px 0 10px 0; 
 }
 .form{
     width:100%;
 }
 .email-address{
     width:75%;
-    padding:13px 15px;
+    padding:4px 15px;
     border:none;
     float:left;
+    text-align: center;
+    font-size:2.5rem;
+}
+input[type="email"]:focus{
+    background-color: grey;
+    border:black;
 }
 input[type="submit"]{
     float:left;
+}
+input[type="submit"]:focus{
+    font-size: 2.9rem;
+    transition: 0.5s ease-in-out;
 }
 .lower-footer{
     background-color: #1d0303;
     text-align: center;
     padding:10px;
+}
+.footer-nav a:hover{
+    color:coral;
+}
+.footer-nav a:focus{
+    font-size: 2.2rem;
+    transition: 0.5s ease;
+}
+.lower-footer a:hover{
+    color:red;
 }
 /* footer ends here */
 
@@ -348,14 +355,11 @@ input[type="submit"]{
         background-size:59%;
         background-position-x:90%;
         background-position-y:25%;
-       
     }
     h1{
         font-size:7.2rem;
         top:11%;
         line-height: 78px;
-        
-
     }
     .social-icons{
         left:3vw;
@@ -366,8 +370,7 @@ input[type="submit"]{
         padding-bottom: 40%;
     }
     .handcrafted-description{
-        width:58%;
-        
+        width:58%;        
     }
     h2{
         font-size:4rem;
@@ -391,7 +394,6 @@ input[type="submit"]{
     .gallery-description h2{
         padding: 5% 0;
     }
-   
     footer h4{
         font-size: 32px;
     }
@@ -421,7 +423,6 @@ input[type="submit"]{
     }
 
 }
-
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
     h1{
@@ -437,7 +438,6 @@ input[type="submit"]{
         width:100%;
         padding-bottom: 75%;
         float:none;
-       
     }
     .handcrafted-description{
         width:100%;
@@ -448,8 +448,7 @@ input[type="submit"]{
         font-size: 3.5rem;
         padding:3% 0;
         text-align: center;
-    }
-    
+    }   
     .icon-section li{
         font-size: 2.4rem;
     }
@@ -463,8 +462,7 @@ input[type="submit"]{
     .gallery-description,
     .gallery-image{
        width:100%;
-        float:none;
-        
+        float:none;   
     }
     .upper-footer{
         padding: 65px 0;
@@ -491,9 +489,7 @@ input[type="submit"]{
     .mobile-menu{
         display:block;
         float:right;
-        margin-right: 5%;
-
-        
+        margin-right: 5%;        
     }
     .mobile-menu-icon{
         width: 35px;
@@ -502,13 +498,12 @@ input[type="submit"]{
         margin: 6px 0;
     }
     header nav{
-        display: none;
+        opacity: 0;;
     }
     header{
         background-size: 80%;
         background-position-x: -32%;
         background-position-y: 41%;
-        
     }
     h1{
         font-size: 5.5rem;
@@ -522,41 +517,25 @@ input[type="submit"]{
     .about{
         padding:40px 0;
     }
-    .handcrafted-image{
-        width:100%;
-        padding-bottom: 75%;
-        float:none;
-        background-size:auto;
-    }
-    .handcrafted-description{
-        width:100%;
-        float:none;
-        margin-left:0;
-    }
-   
     h2{
         text-align: center;
         padding: 24px 0;
         font-size: 3.4rem;
     }
-    
     .latest-collection h2{
         text-transform: capitalize;
     }
-    
     .imgRow:nth-of-type(1){
         content:url(assets/Assets/gallery-photo-3.jpg);
         float:left;
         width:calc((100% - 20px) / 2);
-        margin-right:10px;
-        
+        margin-right:10px;   
     }
     .imgRow:nth-of-type(2){
         content:url(assets/Assets/gallery-photo-1.jpg);
         float:left;
         width:calc((100% - 20px) / 2); 
         margin-left: 10px;
-        
     }
     .imgRow:nth-of-type(3){
         display: none;
@@ -572,16 +551,6 @@ input[type="submit"]{
         float:none;
         width:100%;
     }
-    /* .gallery-description,
-    .gallery-image{
-       width:100%;
-        float:none;
-        
-    }
-    .first,
-    .second{
-        padding:13px 3% 56px;
-    } */
     .footer-nav,
     .stay-updated{
         width:100%;
@@ -606,12 +575,10 @@ input[type="submit"]{
     .wrapper{
         width:90%;
     }
-    
     h1{
         font-size: 4.5rem;
         text-align: right;
         line-height: 56.3px;
-       
     }
     p{
         font-size: 1.4rem;
