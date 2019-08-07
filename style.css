@@ -54,6 +54,7 @@ header{
     padding-top: 1%;
     overflow: hidden;        
 }
+
 .mobile-menu{
 display: none;
 }
@@ -490,6 +491,9 @@ input[type="submit"]:focus{
         display:block;
         float:right;
         margin-right: 5%;        
+    }
+    .mobile-menu:hover{
+        cursor:pointer;
     }
     .mobile-menu-icon{
         width: 35px;
