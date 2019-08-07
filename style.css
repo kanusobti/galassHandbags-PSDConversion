@@ -22,6 +22,7 @@ img{
     height:auto;
     width:100%;
     border:0;
+    display:block;
 }
 
 body{ 
@@ -45,7 +46,7 @@ a{
  header{
      background-image: url(Assets/Assets/group-bags.png);
      height:100vh;
-     min-height:600px;
+     /* min-height:600px; */
      background-repeat: no-repeat;
      background-color: #815600;  
      background-size: 45%;
@@ -55,17 +56,19 @@ a{
      padding-top: 1%;
      overflow: hidden;
      
+     
 }
 .mobile-menu{
     display: none;
 }
  h1{
      font-size:9rem;
-     width:42%;
-     padding-top: 20%;
      text-align: right;
      line-height: 94.3px;
-     position:relative;
+     position: absolute;
+     top:30%;;
+     left:10%;;
+     
     }
 h1 span{
     display: block;
@@ -124,13 +127,6 @@ h2{
     margin:0;
    }
 
-.handcrafted h2{
-    padding-bottom:0;
-}
-.handcrafted{
-    width:100%;
-    
-}
 .handcrafted-image {
     width:25%;
     float:left;
@@ -138,6 +134,7 @@ h2{
     background-image: url(assets/Assets/square-photo.jpg);
     padding-bottom: 25%;
     background-size: cover;
+    overflow: hidden;
 	
 }
 .handcrafted-image img{
@@ -146,8 +143,9 @@ h2{
 }
 .handcrafted-description{
     float:left;
-    width:73%;
+    width:calc(75% - 2%);
     margin-left: 2%;
+    overflow: hidden;
 }
 p{
     font-size:2rem;;
@@ -162,11 +160,12 @@ p{
     background-color: #815600;
     background-repeat: no-repeat;
     background-size: cover;
-    padding:100px 0;
+    padding:5% 0;
 }
 
 .latest-collection h2{
     text-align:center;
+   
 }
 
 .latest-collection-images{
@@ -205,18 +204,21 @@ p{
     width:100%;
    
 }
-.mobil-image{
-    display:none;
-}
 .gallery-description, .gallery-image{
     width:50%;
     float:left;
 }
 .gallery-description{
-    padding-top:100px;
+    padding:50px 0;
 }
 .gallery-container h2{
     padding-bottom: 5%;
+}
+.one{
+    float:right;
+}
+.two{
+    float:left;
 }
 .first{
     padding:135px 5% 0 10%;
@@ -344,19 +346,20 @@ input[type="submit"]{
     }
     header{
         background-size:59%;
-        background-position-x:100%;
-        background-position-y:78%;
+        background-position-x:90%;
+        background-position-y:25%;
        
     }
     h1{
-        font-size:6.7rem;
-        width:30%;
-        padding-top:11%;
+        font-size:7.2rem;
+        top:11%;
         line-height: 78px;
+        
+
     }
     .social-icons{
         left:3vw;
-        bottom:20vh;
+        bottom:45vh;
     }
     .handcrafted-image{
         width:40%;
@@ -364,13 +367,14 @@ input[type="submit"]{
     }
     .handcrafted-description{
         width:58%;
+        
     }
     h2{
         font-size:4rem;
     }
     p{
         font-size: 1.7rem;
-        line-height: 24px;
+        line-height: 20px;
     }
     .handcrafted h2{
         padding-bottom: 14px;
@@ -384,14 +388,12 @@ input[type="submit"]{
     .second{
         padding:30px 10% 0 5%;
     }
-    .footer-nav{
-        line-height: 36px;
+    .gallery-description h2{
+        padding: 5% 0;
     }
-    .stay-updated{
-        padding-left: 9%;
-    }
+   
     footer h4{
-        font-size: 39px;
+        font-size: 32px;
     }
     .email-address{
         width:100%;
@@ -401,43 +403,68 @@ input[type="submit"]{
     input[type="submit"]{
         float:none;
     }
+    .footer-nav ul{
+        margin-top: 0;
+    }
+    .stay-updated{
+        width:55%;
+    }
+    .contact{
+        width:30%;
+    }
+    .contact p{
+        line-height: 24px;
+    }
+    .footer-nav{
+        width:15%;
+        line-height: 36px;
+    }
 
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    /* h1{
-        font-size:5rem;
-    } */
+    h1{
+        font-size:6.2rem;
+    }
     p{
         font-size: 1.6rem;
     }
     .about{
         padding:50px 0;
     }
-    .handcrafted h2{
-        padding-bottom: 6px;
+    .handcrafted-image{
+        width:100%;
+        padding-bottom: 75%;
+        float:none;
+       
     }
-    .latest-collection{
-        padding:55px 0;
+    .handcrafted-description{
+        width:100%;
+        float:none;
+        margin-left:0;
     }
+    h2{
+        font-size: 3.5rem;
+        padding:3% 0;
+        text-align: center;
+    }
+    
     .icon-section li{
         font-size: 2.4rem;
     }
     .read-more-button{
-        margin-left: 25%;
+        text-align: center;
+        padding:0 0 10%;
     }
     .read-more-button a{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
-    .first{
-        padding: 13px 5% 0 8%;
-    }
-    h2{
-        font-size: 3.4rem;
-    }
-    .second{
-        padding:13px 8% 0 5%;
+    .gallery-description,
+    .gallery-image{
+       width:100%;
+        float:none;
+        
     }
     .upper-footer{
         padding: 65px 0;
@@ -477,18 +504,18 @@ input[type="submit"]{
     header nav{
         display: none;
     }
-    /* header{
-        background-size: 98%;
-        background-position-x: -516%;
-        background-position-y: 48%;
-        padding-top: 2%;
+    header{
+        background-size: 80%;
+        background-position-x: -32%;
+        background-position-y: 41%;
+        
     }
     h1{
         font-size: 5.5rem;
-        width:110%;
-        padding-top: 27%;
+        top:10%;
+        right:3%;
         line-height: 65.3px;
-    } */
+    }
     .social-icons{
         display: none;
     }
@@ -510,11 +537,9 @@ input[type="submit"]{
     h2{
         text-align: center;
         padding: 24px 0;
-        font-size: 4rem;
+        font-size: 3.4rem;
     }
-    .read-more-button{
-        margin:8% 0 0 31%;
-    }
+    
     .latest-collection h2{
         text-transform: capitalize;
     }
@@ -547,22 +572,16 @@ input[type="submit"]{
         float:none;
         width:100%;
     }
-    .gallery-description,
+    /* .gallery-description,
     .gallery-image{
        width:100%;
         float:none;
         
     }
-    .one{
-        display:none;
-    }
-    .mobil-image{
-        display:block;
-    }
     .first,
     .second{
         padding:13px 3% 56px;
-    }
+    } */
     .footer-nav,
     .stay-updated{
         width:100%;
@@ -577,20 +596,23 @@ input[type="submit"]{
     .stay-updated,
     .contact{
         padding-top: 40px;
-    }       
+    }  
+    .stay-updated{
+        padding-left: 0;
+    }     
    
 }
 @media (max-width: 320px){
     .wrapper{
         width:90%;
     }
-    /* header{
-        background-position-y: 36%;
-    }
+    
     h1{
-        font-size: 4.2rem;
-        padding-top: 34%;
-    } */
+        font-size: 4.5rem;
+        text-align: right;
+        line-height: 56.3px;
+       
+    }
     p{
         font-size: 1.4rem;
     }
